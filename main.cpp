@@ -95,7 +95,8 @@ int main(){
             cout << "Il risultato e': " << risf << "\n\n";
             break;
         case 7:
-            cout << "Controllo Radici Perfette\n\n";
+            cout << "Controllo Radici Perfette\n";
+            cout << "NB: SOLO INTERI POSITIVI\n\n";
             cout << "Inserire il radicando: ";
             cin >> a;
             cout << "Inserire l'indice di radice: ";
@@ -180,18 +181,16 @@ int Fattoriale(int a){                              //case 5
         return (a * Fattoriale(--a));
 }
 
-int RadiciPerfette(int radicando, int indice){      //case 7 DA CONTROLLARE NON FUNZIONA
+int RadiciPerfette(int radicando, int indice){      //case 7
     int i, ris;
-    for(i = 2; i <= ris; i++)
+    for(i = 0; i <= radicando; i++)
     {
-        ris = (int)pow((double)i, (double)indice);
+        ris = (int)(pow((double)i, (double)indice));
         if(ris == radicando)
-            return ris;
+            return i;
+        else if (ris > radicando)
+            return 0;
     }
-    if(ris == radicando)
-        return i;
-    else if (ris > radicando)
-        return 0;
 }
 
 int MCD(int a, int b){                              //case 16
