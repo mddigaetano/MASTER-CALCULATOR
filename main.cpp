@@ -11,7 +11,7 @@ int main(){
     
     ListaFunzioni();
     
-    cout << "Iserire il numero corrispondente all'operazione da eseguire: ";
+    cout << "Inserire il numero corrispondente all'operazione da eseguire: ";
     cin >> S;
     cout << endl;
     
@@ -26,7 +26,7 @@ int main(){
             cout << "Il risultato e': " << risf << "\n\n";
             break;
         case 2:
-            cout << "Sotrazione\n\n";
+            cout << "Sottrazione\n\n";
             InputDouble(&af, &bf);
             risf = af - bf;
             cout << "Il risultato e': " << risf << "\n\n";
@@ -45,14 +45,16 @@ int main(){
             cout << "Il resto e': "<< risf - (int)(af / bf) << "\n\n";
             break;
         case 5:
-            cout << "Fattoriale\n\n";
-            cout << "Inserisci il termine";
+            cout << "Fattoriale\n";
+            cout << "NB: SOLO INTERI POSITIVI\n\n";
+            cout << "Inserisci il termine: ";
             cin >> a;
             risultato = Fattoriale(a);
             cout << "\nIl risultato e': " << risultato << "\n\n";
             break;
         case 6:
             cout << "Radice Quadrata\n\n";
+            cout << "NB: SOLO POSITIVI\n\n";
             cout << "Inserire il radicando: ";
             cin >> af;
             risf = sqrt(af);
@@ -72,13 +74,15 @@ int main(){
                 cout << "Il risultato e': " << risultato << "\n\n";
             break;
         case 8:
-            cout << "Prova Divisibilita'\n\n";
+            cout << "Prova Divisibilita'\n";
+            cout << "NB: SOLO INTERI POSITIVI\n\n";
             cout << "Inserire il termine: ";
             cin >> a;
 //          ProvaDivisibilita(a);                                  DA RIVEDERE
             break;
         case 9:
-            cout << "Conversione intera: Decimale --> Qualsiasi Base\n\n";
+            cout << "Conversione intera: Decimale --> Base fino a 16\n";
+            cout << "NB: SOLO POSITIVI\n\n";
             cout << "Inserire il numero da convertire: ";
             cin >> a;
             cout << "Inserire la base: ";
@@ -92,17 +96,20 @@ int main(){
             cout << "Il risultato e': " << risf << "\n\n";
             break;
         case 11:
-            cout << "Scomposizione in Fattori Primi\n\n";
+            cout << "Scomposizione in Fattori Primi\n";
+            cout << "NB: SOLO INTERI POSITIVI\n\n";
             cout << "Inserire il numero da scomporre: ";
             cin >> a;
 //            cout << Scomposizione(a);
             break;
         case 12:
             cout << "Equazioni di Secondo Grado\n\n";
+            //INPUT ESTERNO ALLA FUNZIONE!!!!
 //            EquazioniSecondoGrado();
             break;
         case 13:
             cout << "Sistemi a Due Incognite\n\n";
+            //INPUT ESTERNO ALLA FUNZIONE!!!!
 //            Sistemi();
             break;
         default:
