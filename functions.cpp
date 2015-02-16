@@ -31,20 +31,23 @@ void ListaFunzioni(){                               //case 0
     cout << "11-Scomposizione in Fattori Primi\n";
     cout << "12-Equazioni di Secondo Grado\n";
     cout << "13-Sistemi a Due Incognite\n";
-    // MOLTE ALTRE DA FARE
+    cout << "14-Sistemi a tre Incognite\n";
+    cout << "15-Tavola Pitagorica\n";
+    cout << "16-Massimo Comune Divisore\n";
+    cout << "17-Minimo Comune Multiplo\n";
+    cout << "18-Funzioni Trigonometriche\n";
+    cout << "19-Numeri Complessi\n";
+    cout << "20-Frequenza di Risonanza\n";
     cout << "\n";
 }
 
 //Funzioni Principali
 
 int Fattoriale(int a){                              //case 5
-	int i;
-	if (a == 0)                                 //controllo caso estremo
-            a = 1;
-        else
-            for (i = a-1; i > 1; i--)               //calcolo iterativo
-		a = a * i;
-        return a;
+    int risultato=1;                                //preferire iterazione a ricorsività
+    for(;a != 0; a--)                               //per evitare stack overflow
+        risultato *= a;
+    return risultato;
 }
 
 int RadiciPerfette(int radicando, int indice){      //case 7

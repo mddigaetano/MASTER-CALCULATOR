@@ -4,7 +4,9 @@ int main(){
     //Dichiarazione variabili
     
     int S;                                          //selettore switch
-    int a, b, risultato;                            //operatori int
+    int a, b, c, risultato;                         //operatori int
+    int i;                                          //contatore
+    int x[3],y[3],z[3],TerminiNoti[3],Risultati[3]; //vettori per sistemi
     double af, bf, risf;                            //operatori double
     
     //Inizio operazioni
@@ -100,17 +102,31 @@ int main(){
             cout << "NB: SOLO INTERI POSITIVI\n\n";
             cout << "Inserire il numero da scomporre: ";
             cin >> a;
-//            cout << Scomposizione(a);
+//          Scomposizione(a);
             break;
         case 12:
-            cout << "Equazioni di Secondo Grado\n\n";
-            //INPUT ESTERNO ALLA FUNZIONE!!!!
-//            EquazioniSecondoGrado();
+            cout << "Equazioni di Secondo Grado\n";
+            cout << "NB: SOLO INTERI\n\n";
+            cout << "Inserire il coefficiente a: ";
+            cin >> a;
+            cout << "Inserire il coefficiente b: ";
+            cin >> b;
+            cout << "Inserire il coefficiente c: ";
+            cin >> c;
+//            EquazioniSecondoGrado(a,b,c);
             break;
         case 13:
-            cout << "Sistemi a Due Incognite\n\n";
-            //INPUT ESTERNO ALLA FUNZIONE!!!!
-//            Sistemi();
+            cout << "Sistemi a Due Incognite\n";
+            cout << "NB: SOLO INTERI\n\n";
+            for(i=0; i<2; i++){
+                cout << "Inserire il "<< i <<"° coefficiente di x: ";
+                cin >> x[i];
+            }
+            for(i=0; i<2; i++){
+                cout << "Inserire il "<< i <<"° coefficiente di y: ";
+                cin >> y[i];
+            }
+//            Sistemi(x[],y[],&Risultati[]);
             break;
         default:
             cout << "Funzione non ancora aggiunta";
