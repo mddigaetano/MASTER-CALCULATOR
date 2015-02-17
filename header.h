@@ -13,7 +13,7 @@ struct s_ModuloPhi{         //dichiarazione struttura per numeri complessi espre
     double phi;
 }; typedef s_ModuloPhi ModF;  //dichiarazione tipo variabile derivato
 
-struct s_NumeriFrazionari{         //dichiarazione struttura per numeri complessi espressi "modulo<phi"
+struct s_NumeriFrazionari{         //dichiarazione struttura per numeri frazionari espressi "numeratore/denominatore"
     int numeratore;
     int denominatore;
 }; typedef s_NumeriFrazionari NumFra;  //dichiarazione tipo variabile derivato
@@ -22,8 +22,8 @@ struct s_NumeriFrazionari{         //dichiarazione struttura per numeri compless
 
 int Fattoriale(int a);
 int RadiciPerfette(int radicando, int indice);
-//void ProvaDivisibilita(int a);                      DA FARE
-//void Conversione(int numero, int base);             DA FARE
+bool ProvaDivisibilita(int a);
+void Conversione(int numero, int base);
 //int Scomposizione(int a);                           DA FARE
 //void EquazioniSecondoGrado(int a,int b,int c);      DA FARE
 //void Sistemi(x[],y[],*Risultati[]);                 DA FARE

@@ -8,6 +8,7 @@ int main(){
     int i;                                          //contatore
     int x[3],y[3],z[3],TerminiNoti[3],Risultati[3]; //vettori per sistemi
     double af, bf, risf;                            //operatori double
+    bool ctrl;                                      //variabile controllo
     
     //Inizio operazioni
     
@@ -80,7 +81,9 @@ int main(){
             cout << "NB: SOLO INTERI POSITIVI\n\n";
             cout << "Inserire il termine: ";
             cin >> a;
-//          ProvaDivisibilita(a);                                  DA RIVEDERE
+            ctrl = ProvaDivisibilita(a);                      //sistemare stdout
+            if(ctrl)
+                cout << "\nIl numero e' primo";
             break;
         case 9:
             cout << "Conversione intera: Decimale --> Base fino a 16\n";
@@ -89,7 +92,7 @@ int main(){
             cin >> a;
             cout << "Inserire la base: ";
             cin >> b;
-//            Conversione(a, b);
+            Conversione(a, b);
             break;
         case 10:
             cout << "Elevazione a Potenza\n\n";
