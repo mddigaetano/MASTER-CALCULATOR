@@ -78,10 +78,10 @@ int MCD(int a, int b){                              //case 16
 
 bool ProvaDivisibilita(int a){
     int divisoreProva, i=0;
-	for (divisoreProva = 2; divisoreProva < a; divisoreProva++)
-		if (a % divisoreProva == 0){
+	for (divisoreProva = 2; divisoreProva < a; divisoreProva++)         //scorre il divisore da provare
+		if (a % divisoreProva == 0){                                //se divisibile
 			i++;
-			cout << divisoreProva << endl << endl;
+			cout << divisoreProva << endl << endl;              //stampa
 		}
 	if (i == 0)
 		return true;
@@ -91,19 +91,19 @@ bool ProvaDivisibilita(int a){
 
 void Conversione(int numero, int base){
     int i, binario, vettore[100];
-    for (i = 0; i < 100; i++)
+    for (i = 0; i < 100; i++)                   //azzeramento vettore
 	vettore[i] = 0;
     i = 0;
-    while (numero != 0){
-	vettore[i] = numero % base;
-	numero /= base;
+    while (numero != 0){                        //finché non si arriva a zero
+	vettore[i] = numero % base;             //memorizza testo
+	numero /= base;                         //esegui la divisione
 	i++;
     }
     i--;
     while (i >= 0){
 	if (vettore[i] < 10)
-            cout << vettore[i];
-	else if (vettore[i] == 10)
+            cout << vettore[i];                 //stampa vettore al contrario
+	else if (vettore[i] == 10)              //stampa lettere esadecimali
             cout << "A";
 	else if (vettore[i] == 11)
             cout << "B";

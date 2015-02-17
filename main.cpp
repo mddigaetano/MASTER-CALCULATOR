@@ -94,7 +94,7 @@ int main(){
             cin >> b;
             Conversione(a, b);
             break;
-        case 10:
+        case 10:                                                //next target
             cout << "Elevazione a Potenza\n\n";
             InputDouble(&af, &bf);
             risf = pow(af, bf);
