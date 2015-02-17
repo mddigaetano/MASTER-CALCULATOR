@@ -119,3 +119,15 @@ void Conversione(int numero, int base){
     }
     cout << endl;
 }
+
+void Scomposizione(int a){
+    int prime;
+    for (prime = 2; prime <= a; prime++){
+    	if (ProvaDivisibilita(prime)){
+            while (a % prime == 0){
+		a /= prime;
+		cout << a << "     " << prime << endl;
+            }
+	}
+    }
+}

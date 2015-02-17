@@ -94,7 +94,7 @@ int main(){
             cin >> b;
             Conversione(a, b);
             break;
-        case 10:                                                //next target
+        case 10:
             cout << "Elevazione a Potenza\n\n";
             InputDouble(&af, &bf);
             risf = pow(af, bf);
@@ -105,7 +105,7 @@ int main(){
             cout << "NB: SOLO INTERI POSITIVI\n\n";
             cout << "Inserire il numero da scomporre: ";
             cin >> a;
-//          Scomposizione(a);
+            Scomposizione(a);
             break;
         case 12:
             cout << "Equazioni di Secondo Grado\n";

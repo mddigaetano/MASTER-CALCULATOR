@@ -24,7 +24,7 @@ int Fattoriale(int a);
 int RadiciPerfette(int radicando, int indice);
 bool ProvaDivisibilita(int a);
 void Conversione(int numero, int base);
-//int Scomposizione(int a);                           DA FARE
+void Scomposizione(int a);
 //void EquazioniSecondoGrado(int a,int b,int c);      DA FARE
 //void Sistemi(x[],y[],*Risultati[]);                 DA FARE
 //void Sistemi3();                                    DA FARE
@@ -38,5 +38,5 @@ int MCD(int a, int b);
 //Prototipi Funzioni Extra
 
 void InputDouble(double *af, double *bf);
-bool segno(double a);                               //TESTARE
-void ListaFunzioni();                               //DA FARE (finire con "\n\n")
+bool segno(double a);
+void ListaFunzioni();
