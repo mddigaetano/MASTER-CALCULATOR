@@ -13,7 +13,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>functions.cpp</itemPath>
+      <itemPath>EquazioniSecondoGrado.cpp</itemPath>
+      <itemPath>case_1-10.cpp</itemPath>
+      <itemPath>case_11-20.cpp</itemPath>
+      <itemPath>extra_functions.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -38,7 +41,13 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="functions.cpp" ex="false" tool="1" flavor2="0">
+      <item path="EquazioniSecondoGrado.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="case_1-10.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="case_11-20.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="extra_functions.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="header.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -65,7 +74,13 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="functions.cpp" ex="false" tool="1" flavor2="0">
+      <item path="EquazioniSecondoGrado.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="case_1-10.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="case_11-20.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="extra_functions.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="header.h" ex="false" tool="3" flavor2="0">
       </item>

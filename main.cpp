@@ -6,7 +6,8 @@ int main(){
     int S;                                          //selettore switch
     int a, b, c, risultato;                         //operatori int
     int i;                                          //contatore
-    int x[3],y[3],z[3],TerminiNoti[3],Risultati[3]; //vettori per sistemi
+    int x[3],y[3],z[3],TerminiNoti[3];              //vettori per sistemi
+    NumFra Risultati[3];                            //vettore per risultati frazionari
     double af, bf, risf;                            //operatori double
     bool ctrl;                                      //variabile controllo
     
@@ -81,7 +82,7 @@ int main(){
             cout << "NB: SOLO INTERI POSITIVI\n\n";
             cout << "Inserire il termine: ";
             cin >> a;
-            ctrl = ProvaDivisibilita(a);                      //sistemare stdout
+            ctrl = ProvaDivisibilita(a);
             if(ctrl)
                 cout << "\nIl numero e' primo";
             break;
@@ -116,7 +117,7 @@ int main(){
             cin >> b;
             cout << "Inserire il coefficiente c: ";
             cin >> c;
-//            EquazioniSecondoGrado(a,b,c);
+            EquazioniSecondoGrado(a, b, c, Risultati);
             break;
         case 13:
             cout << "Sistemi a Due Incognite\n";
