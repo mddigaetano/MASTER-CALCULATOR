@@ -36,7 +36,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/EquazioniSecondoGrado.o \
-	${OBJECTDIR}/Sistemi.o \
+	${OBJECTDIR}/Sistemi2.o \
+	${OBJECTDIR}/Sistemi3.o \
 	${OBJECTDIR}/case_1-10.o \
 	${OBJECTDIR}/case_11-20.o \
 	${OBJECTDIR}/extra_functions.o \
@@ -72,10 +73,15 @@ ${OBJECTDIR}/EquazioniSecondoGrado.o: EquazioniSecondoGrado.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/EquazioniSecondoGrado.o EquazioniSecondoGrado.cpp
 
-${OBJECTDIR}/Sistemi.o: Sistemi.cpp 
+${OBJECTDIR}/Sistemi2.o: Sistemi2.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Sistemi.o Sistemi.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Sistemi2.o Sistemi2.cpp
+
+${OBJECTDIR}/Sistemi3.o: Sistemi3.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Sistemi3.o Sistemi3.cpp
 
 ${OBJECTDIR}/case_1-10.o: case_1-10.cpp 
 	${MKDIR} -p ${OBJECTDIR}

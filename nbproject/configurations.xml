@@ -14,7 +14,8 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>EquazioniSecondoGrado.cpp</itemPath>
-      <itemPath>Sistemi.cpp</itemPath>
+      <itemPath>Sistemi2.cpp</itemPath>
+      <itemPath>Sistemi3.cpp</itemPath>
       <itemPath>case_1-10.cpp</itemPath>
       <itemPath>case_11-20.cpp</itemPath>
       <itemPath>extra_functions.cpp</itemPath>
@@ -44,7 +45,9 @@
       </compileType>
       <item path="EquazioniSecondoGrado.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Sistemi.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Sistemi2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sistemi3.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="case_1-10.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -79,7 +82,9 @@
       </compileType>
       <item path="EquazioniSecondoGrado.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="Sistemi.cpp" ex="false" tool="1" flavor2="0">
+      <item path="Sistemi2.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sistemi3.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="case_1-10.cpp" ex="false" tool="1" flavor2="0">
       </item>

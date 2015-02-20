@@ -26,8 +26,8 @@ bool ProvaDivisibilita(int a);
 void Conversione(int numero, int base);
 void Scomposizione(int a);
 void EquazioniSecondoGrado(int a,int b,int c,NumFra Risultati[]);
-void Sistemi(int x[],int y[],int TerminiNoti[],NumFra Risultati[]);
-//void Sistemi3(int x[],int y[],int z[],int TerminiNoti[],NumFra Risultati[]);DA FARE
+void Sistemi2(int x[],int y[],int TerminiNoti[],NumFra Risultati[]);
+void Sistemi3(int x[],int y[],int z[],int TerminiNoti[],NumFra Risultati[]);
 //void TavolaPitagorica();                            DA FARE
 int MCD(int a, int b);
 //int MinimoComuneMultiplo(int a, int b);             DA FARE
@@ -50,10 +50,18 @@ float calcolaDelta(int a,int b,int c);
 NumFra calcolaSoluzione1(int a,int b,int c);
 NumFra calcolaSoluzione2(float a,float b,float c);
 
-//Prototipi Sistemi lineari
+//Prototipi Sistemi2
 
-void InputSistemi(int x[],int y[],int TerN[]);
+void InputSistemi2(int x[],int y[],int TerN[]);
 
-void CalcoloSistemi(int x[],int y[],int TerN[],NumFra Risultati[]);
+void CalcoloSistemi2(int x[],int y[],int TerN[],NumFra Risultati[]);
     int Determinante2(int V1[],int V2[]);
-void StampaSistemi(NumFra Risultati[]);
+void StampaSistemi2(NumFra Risultati[]);
+
+//Prototipi Sistemi3
+
+void InputSistemi3(int x[],int y[],int z[],int TerN[]);
+
+void CalcoloSistemi3(int x[],int y[],int z[],int TerN[],NumFra Risultati[]);
+    int Determinante3(int V1[],int V2[],int V3[]);
+void StampaSistemi3(NumFra Risultati[]);

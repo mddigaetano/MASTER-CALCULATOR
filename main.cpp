@@ -122,9 +122,16 @@ int main(){
         case 13:
             cout << "Sistemi a Due Incognite\n";
             cout << "NB: SOLO INTERI\n\n";
-            InputSistemi(x,y,TerN);
-            Sistemi(x,y,TerN,Risultati);
-            StampaSistemi(Risultati);
+            InputSistemi2(x,y,TerN);
+            Sistemi2(x,y,TerN,Risultati);
+            StampaSistemi2(Risultati);
+            break;
+        case 14:
+            cout << "Sistemi a Tre Incognite\n";
+            cout << "NB: SOLO INTERI\n\n";
+            InputSistemi3(x,y,z,TerN);
+            Sistemi3(x,y,z,TerN,Risultati);
+            StampaSistemi3(Risultati);
             break;
         default:
             cout << "Funzione non ancora aggiunta";

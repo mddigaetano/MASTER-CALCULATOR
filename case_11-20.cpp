@@ -1,5 +1,18 @@
 #include "header.h"
 
+void Scomposizione(int a){                                  //case 11
+    int prime;
+    for (prime = 2; prime <= a; prime++){                   //ricerca numeri primi
+    	if (ProvaDivisibilita(prime)){                      //controllo numeri primi
+            while (a % prime == 0){                         //se divisibile...
+		a /= prime;                                 //...dividi
+		cout << a << "     " << prime << endl;
+            }
+	}
+    }
+}
+
+
 void EquazioniSecondoGrado(int a,int b,int c,NumFra Risultati[]){       //case 12
     cout << "Delta = " << calcolaDelta(a,b,c) << endl;                  //calcolo e stampa delta
     if(esistonoSoluzioniReali(a,b,c)){                                  //controllo esistenza soluzioni
@@ -15,25 +28,17 @@ void EquazioniSecondoGrado(int a,int b,int c,NumFra Risultati[]){       //case 1
     }
 }
 
-void Scomposizione(int a){
-    int prime;
-    for (prime = 2; prime <= a; prime++){
-    	if (ProvaDivisibilita(prime)){
-            while (a % prime == 0){
-		a /= prime;
-		cout << a << "     " << prime << endl;
-            }
-	}
-    }
+void Sistemi2(int x[],int y[],int TerN[],NumFra Risultati[]){ //case 13
+    CalcoloSistemi2(x,y,TerN,Risultati);
 }
 
-void Sistemi(int x[],int y[],int TerN[],NumFra Risultati[]){ //case 13
-    CalcoloSistemi(x,y,TerN,Risultati);
+void Sistemi3(int x[],int y[],int z[],int TerN[],NumFra Risultati[]){ //case 14
+    CalcoloSistemi3(x,y,z,TerN,Risultati);
 }
 
 int MCD(int a, int b){                              //case 16
     int resto;
-    if(segno(a))
+    if(segno(a))                                    //controllo segni
         a *= -1;
     if(segno(b))
         b *= -1;
