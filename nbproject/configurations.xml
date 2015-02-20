@@ -14,6 +14,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>EquazioniSecondoGrado.cpp</itemPath>
+      <itemPath>Sistemi.cpp</itemPath>
       <itemPath>case_1-10.cpp</itemPath>
       <itemPath>case_11-20.cpp</itemPath>
       <itemPath>extra_functions.cpp</itemPath>
@@ -42,6 +43,8 @@
       <compileType>
       </compileType>
       <item path="EquazioniSecondoGrado.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sistemi.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="case_1-10.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -75,6 +78,8 @@
         </asmTool>
       </compileType>
       <item path="EquazioniSecondoGrado.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Sistemi.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="case_1-10.cpp" ex="false" tool="1" flavor2="0">
       </item>

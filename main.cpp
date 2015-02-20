@@ -6,7 +6,7 @@ int main(){
     int S;                                          //selettore switch
     int a, b, c, risultato;                         //operatori int
     int i;                                          //contatore
-    int x[3],y[3],z[3],TerminiNoti[3];              //vettori per sistemi
+    int x[3],y[3],z[3],TerN[3];                     //vettori per sistemi
     NumFra Risultati[3];                            //vettore per risultati frazionari
     double af, bf, risf;                            //operatori double
     bool ctrl;                                      //variabile controllo
@@ -122,15 +122,9 @@ int main(){
         case 13:
             cout << "Sistemi a Due Incognite\n";
             cout << "NB: SOLO INTERI\n\n";
-            for(i=0; i<2; i++){
-                cout << "Inserire il "<< i <<"° coefficiente di x: ";
-                cin >> x[i];
-            }
-            for(i=0; i<2; i++){
-                cout << "Inserire il "<< i <<"° coefficiente di y: ";
-                cin >> y[i];
-            }
-//            Sistemi(x[],y[],&Risultati[]);
+            InputSistemi(x,y,TerN);
+            Sistemi(x,y,TerN,Risultati);
+            StampaSistemi(Risultati);
             break;
         default:
             cout << "Funzione non ancora aggiunta";

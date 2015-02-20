@@ -26,8 +26,8 @@ bool ProvaDivisibilita(int a);
 void Conversione(int numero, int base);
 void Scomposizione(int a);
 void EquazioniSecondoGrado(int a,int b,int c,NumFra Risultati[]);
-//void Sistemi(x[],y[],Risultati[]);                  DA FARE
-//void Sistemi3(x[],y[],z[],Risultati[]);             DA FARE
+void Sistemi(int x[],int y[],int TerminiNoti[],NumFra Risultati[]);
+//void Sistemi3(int x[],int y[],int z[],int TerminiNoti[],NumFra Risultati[]);DA FARE
 //void TavolaPitagorica();                            DA FARE
 int MCD(int a, int b);
 //int MinimoComuneMultiplo(int a, int b);             DA FARE
@@ -43,9 +43,17 @@ void ListaFunzioni();
 NumFra Semplifica(NumFra num);
 void StampaFrazioni(NumFra num);
 
-//Prototipi da ordinare
+//Prototipi EquazioniSecondoGrado
 
 bool esistonoSoluzioniReali(int a,int b,int c);
 float calcolaDelta(int a,int b,int c);
 NumFra calcolaSoluzione1(int a,int b,int c);
 NumFra calcolaSoluzione2(float a,float b,float c);
+
+//Prototipi Sistemi lineari
+
+void InputSistemi(int x[],int y[],int TerN[]);
+
+void CalcoloSistemi(int x[],int y[],int TerN[],NumFra Risultati[]);
+    int Determinante2(int V1[],int V2[]);
+void StampaSistemi(NumFra Risultati[]);

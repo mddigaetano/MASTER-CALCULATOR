@@ -27,6 +27,10 @@ void Scomposizione(int a){
     }
 }
 
+void Sistemi(int x[],int y[],int TerN[],NumFra Risultati[]){ //case 13
+    CalcoloSistemi(x,y,TerN,Risultati);
+}
+
 int MCD(int a, int b){                              //case 16
     int resto;
     if(segno(a))

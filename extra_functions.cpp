@@ -31,7 +31,7 @@ void ListaFunzioni(){                               //case 0
     cout << "11-Scomposizione in Fattori Primi\n";
     cout << "12-Equazioni di Secondo Grado\n";
     cout << "13-Sistemi a Due Incognite\n";
-    cout << "14-Sistemi a tre Incognite\n";
+    cout << "14-Sistemi a Tre Incognite\n";
     cout << "15-Tavola Pitagorica\n";
     cout << "16-Massimo Comune Divisore\n";
     cout << "17-Minimo Comune Multiplo\n";
