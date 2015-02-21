@@ -16,7 +16,7 @@ struct s_NumeriFrazionari{         //dichiarazione struttura per numeri fraziona
 
 int Fattoriale(int a);
 int RadiciPerfette(int radicando, int indice);
-bool ProvaDivisibilita(int a);
+bool ProvaDivisibilita(int a, bool ctrl);
 void Conversione(int numero, int base);
 void Scomposizione(int a);
 void EquazioniSecondoGrado(int a,int b,int c,NumFra Risultati[]);
@@ -145,7 +145,7 @@ int main(){
             cout << "NB: SOLO INTERI POSITIVI\n\n";
             cout << "Inserire il termine: ";
             cin >> a;
-            ctrl = ProvaDivisibilita(a);
+            ctrl = ProvaDivisibilita(a,true);
             if(ctrl)
                 cout << "\nIl numero e' primo";
             break;
@@ -260,10 +260,10 @@ int RadiciPerfette(int radicando, int indice){      //case 7
     }
 }
 
-bool ProvaDivisibilita(int a){
+bool ProvaDivisibilita(int a,bool ctrl){
     int divisoreProva, i=0;
 	for (divisoreProva = 2; divisoreProva < a; divisoreProva++)         //scorre il divisore da provare
-		if (a % divisoreProva == 0){                                //se divisibile
+		if (a % divisoreProva == 0 && ctrl){                                //se divisibile
 			i++;
 			cout << divisoreProva << endl << endl;              //stampa
 		}
@@ -307,7 +307,7 @@ void Conversione(int numero, int base){
 void Scomposizione(int a){                                  //case 11
     int prime;
     for (prime = 2; prime <= a; prime++){                   //ricerca numeri primi
-    	if (ProvaDivisibilita(prime)){                      //controllo numeri primi
+    	if (ProvaDivisibilita(prime,false)){                      //controllo numeri primi
             while (a % prime == 0){                         //se divisibile...
 		a /= prime;                                 //...dividi
 		cout << a << "     " << prime << endl;
