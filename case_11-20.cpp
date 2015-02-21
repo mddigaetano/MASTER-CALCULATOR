@@ -64,3 +64,15 @@ int MCD(int a, int b){                              //case 16
     }
     return a;
 }
+
+int MinimoComuneMultiplo(int a,int b){              //case 17
+    int i;
+    if(segno(a))                                    //controllo segni
+        a *= -1;
+    if(segno(b))
+        b *= -1;
+    for(i=a;i<=a*b;i++)
+        if(i%a==0 && i%b==0)
+            break;
+    return i;
+}

@@ -149,6 +149,15 @@ int main(){
             cin >> b;
             cout << "Il risultato e': " << MCD(a,b);
             break;
+        case 17:
+            cout << "Minimo Comune Multiplo\n";
+            cout << "NB: SOLO INTERI; DIVERSI DA ZERO\n\n";
+            cout << "Inserisci il primo termine: ";
+            cin >> a;
+            cout << "Inserisci il secondo termine: ";
+            cin >> b;
+            cout << "Il risultato e': " << MinimoComuneMultiplo(a,b);
+            break;
         default:
             cout << "Funzione non ancora aggiunta";
     }
