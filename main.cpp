@@ -83,7 +83,7 @@ int main(){
             cout << "NB: SOLO INTERI POSITIVI\n\n";
             cout << "Inserire il termine: ";
             cin >> a;
-            ctrl = ProvaDivisibilita(a);
+            ctrl = ProvaDivisibilita(a,true);
             if(ctrl)
                 cout << "\nIl numero e' primo";
             break;

@@ -22,7 +22,7 @@ struct s_NumeriFrazionari{         //dichiarazione struttura per numeri fraziona
 
 int Fattoriale(int a);
 int RadiciPerfette(int radicando, int indice);
-bool ProvaDivisibilita(int a);
+bool ProvaDivisibilita(int a, bool ctrl);
 void Conversione(int numero, int base);
 void Scomposizione(int a);
 void EquazioniSecondoGrado(int a,int b,int c,NumFra Risultati[]);

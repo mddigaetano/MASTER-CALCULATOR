@@ -20,10 +20,10 @@ int RadiciPerfette(int radicando, int indice){      //case 7
     }
 }
 
-bool ProvaDivisibilita(int a){
+bool ProvaDivisibilita(int a, bool ctrl){
     int divisoreProva, i=0;
 	for (divisoreProva = 2; divisoreProva < a; divisoreProva++)         //scorre il divisore da provare
-		if (a % divisoreProva == 0){                                //se divisibile
+		if (a % divisoreProva == 0 && ctrl){                        //se divisibile
 			i++;
 			cout << divisoreProva << endl << endl;              //stampa
 		}

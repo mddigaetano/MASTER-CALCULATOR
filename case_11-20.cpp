@@ -3,7 +3,7 @@
 void Scomposizione(int a){                                  //case 11
     int prime;
     for (prime = 2; prime <= a; prime++){                   //ricerca numeri primi
-    	if (ProvaDivisibilita(prime)){                      //controllo numeri primi
+    	if (ProvaDivisibilita(prime,false)){                //controllo numeri primi
             while (a % prime == 0){                         //se divisibile...
 		a /= prime;                                 //...dividi
 		cout << a << "     " << prime << endl;
