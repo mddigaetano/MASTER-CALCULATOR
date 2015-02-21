@@ -36,15 +36,15 @@ void Sistemi3(int x[],int y[],int z[],int TerN[],NumFra Risultati[]){ //case 14
     CalcoloSistemi3(x,y,z,TerN,Risultati);
 }
 
-void TavolaPitagorica(int a){
-	int R,C;
-        int tav[a][a];
+void TavolaPitagorica(int a){                   //case 15
+	int R,C;                                //dichiarazione variabili riga colonna
+        int tav[a][a];                          //dichiarazione matrice
 	cout << endl << endl;
-	for (R = 0; R < a; R++){
+	for (R = 0; R < a; R++){                //riempimento matrice
             for (C = 0; C < a; C++)
                 tav[R][C] = R * C;
 	}
-	for (R = 1; R < a; R++){
+	for (R = 1; R < a; R++){                //stampa matrice
             for (C = 1; C < a; C++)
 		cout << tav[R][C] << "  ";
             cout << endl << endl;

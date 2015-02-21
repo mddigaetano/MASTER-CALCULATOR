@@ -140,6 +140,15 @@ int main(){
             cin >> a;
             TavolaPitagorica(++a);
             break;
+        case 16:
+            cout << "Massimo Comune Divisore\n";
+            cout << "NB: SOLO INTERI\n\n";
+            cout << "Inserisci il primo termine: ";
+            cin >> a;
+            cout << "Inserisci il secondo termine: ";
+            cin >> b;
+            cout << "Il risultato e': " << MCD(a,b);
+            break;
         default:
             cout << "Funzione non ancora aggiunta";
     }
