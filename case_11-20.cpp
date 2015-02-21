@@ -36,6 +36,21 @@ void Sistemi3(int x[],int y[],int z[],int TerN[],NumFra Risultati[]){ //case 14
     CalcoloSistemi3(x,y,z,TerN,Risultati);
 }
 
+void TavolaPitagorica(int a){
+	int R,C;
+        int tav[a][a];
+	cout << endl << endl;
+	for (R = 0; R < a; R++){
+            for (C = 0; C < a; C++)
+                tav[R][C] = R * C;
+	}
+	for (R = 1; R < a; R++){
+            for (C = 1; C < a; C++)
+		cout << tav[R][C] << "  ";
+            cout << endl << endl;
+	}
+}
+
 int MCD(int a, int b){                              //case 16
     int resto;
     if(segno(a))                                    //controllo segni

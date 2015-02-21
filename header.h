@@ -28,7 +28,7 @@ void Scomposizione(int a);
 void EquazioniSecondoGrado(int a,int b,int c,NumFra Risultati[]);
 void Sistemi2(int x[],int y[],int TerminiNoti[],NumFra Risultati[]);
 void Sistemi3(int x[],int y[],int z[],int TerminiNoti[],NumFra Risultati[]);
-//void TavolaPitagorica();                            DA FARE
+void TavolaPitagorica(int a);
 int MCD(int a, int b);
 //int MinimoComuneMultiplo(int a, int b);             DA FARE
 //double FunzioniTrigonometriche(int a);              DA FARE

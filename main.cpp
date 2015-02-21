@@ -133,6 +133,13 @@ int main(){
             Sistemi3(x,y,z,TerN,Risultati);
             StampaSistemi3(Risultati);
             break;
+        case 15:
+            cout << "Tavola Pitagorica\n";
+            cout << "NB: SOLO INTERI POSITIVI\n\n";
+            cout << "Inserire il numero di fattori per lato: ";
+            cin >> a;
+            TavolaPitagorica(++a);
+            break;
         default:
             cout << "Funzione non ancora aggiunta";
     }
