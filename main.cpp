@@ -7,6 +7,7 @@ int main(){
     int a, b, c, risultato;                         //operatori int
     int i;                                          //contatore
     int x[3],y[3],z[3],TerN[3];                     //vettori per sistemi
+    char funz[5];                                   //vettore per funz. trigon.
     NumFra Risultati[3];                            //vettore per risultati frazionari
     double af, bf, risf;                            //operatori double
     bool ctrl;                                      //variabile controllo
@@ -157,6 +158,18 @@ int main(){
             cout << "Inserisci il secondo termine: ";
             cin >> b;
             cout << "Il risultato e': " << MinimoComuneMultiplo(a,b);
+            break;
+        case 18:
+            cout << "Funzioni Trigonometriche\n";
+            cout << "NB: SOLO VALORI IN GRADI";
+            cout << "Inserire il termine: ";
+            cin >> af;
+            cout << "\nInserire la funzione da eseguire (anteporre \"a\" per funzioni inverse):\n";
+            cout << "Seno --> sin\n";
+            cout << "Coseno --> cos\n";
+            cout << "Tangente --> tan\n\n";
+            cin >> funz;
+            cout << "Il risultato e': " << FunzioniTrigonometriche(af,funz);
             break;
         default:
             cout << "Funzione non ancora aggiunta";

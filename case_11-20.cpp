@@ -76,3 +76,18 @@ int MinimoComuneMultiplo(int a,int b){              //case 17
             break;
     return i;
 }
+
+double FunzioniTrigonometriche(double a, char v[]){
+     if (strcmp(v,"sin")==0)
+        return sin(a*M_PI/180);
+    if (strcmp(v,"cos")==0)
+        return cos(a*M_PI/180);
+    if (strcmp(v,"tan")==0)
+        return tan(a*M_PI/180);
+    if (strcmp(v,"asin")==0)
+        return asin(a)*180/M_PI;
+    if (strcmp(v,"acos")==0)
+        return acos(a)*180/M_PI;
+    if (strcmp(v,"atan")==0)
+        return atan(a)*180/M_PI;
+}

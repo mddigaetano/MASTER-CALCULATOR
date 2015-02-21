@@ -31,7 +31,7 @@ void Sistemi3(int x[],int y[],int z[],int TerminiNoti[],NumFra Risultati[]);
 void TavolaPitagorica(int a);
 int MCD(int a, int b);
 int MinimoComuneMultiplo(int a, int b);
-//double FunzioniTrigonometriche(int a);              DA FARE
+double FunzioniTrigonometriche(double a,char v[]);
 //void NumeriComplessi();                             DA FARE
 //void Risonanza(double induttanza, double capacita); DA FARE
 
