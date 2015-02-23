@@ -223,7 +223,7 @@ int main(){
             break;
         case 18:
             cout << "Funzioni Trigonometriche\n";
-            cout << "NB: SOLO VALORI IN GRADI";
+            cout << "NB: SOLO VALORI IN GRADI\n\n";
             cout << "Inserire il termine: ";
             cin >> af;
             cout << "\nInserire la funzione da eseguire (anteporre \"a\" per funzioni inverse):\n";
@@ -414,6 +414,7 @@ bool segno(double a){
 }
 
 void ListaFunzioni(){                               //case 0
+    cout << "0-Lista Funzioni\n";
     cout << "1-Addizione\n";
     cout << "2-Sottrazione\n";
     cout << "3-Moltiplicazione\n";
