@@ -34,8 +34,8 @@ bool ProvaDivisibilita(int a, bool ctrl){
 }
 
 void Conversione(int numero, int base){
-    int i, binario, vettore[100];
-    for (i = 0; i < 100; i++)                   //azzeramento vettore
+    int i, binario, vettore[32];
+    for (i = 0; i < 32; i++)                   //azzeramento vettore
 	vettore[i] = 0;
     i = 0;
     while (numero != 0){                        //finché non si arriva a zero
