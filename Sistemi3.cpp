@@ -2,7 +2,7 @@
 
 void InputSistemi3(int x[],int y[],int z[],int TerN[]){
     int i;
-    for(i=0;i<2;i++){
+    for(i=0;i<3;i++){
         cout << "Inserisci il " << i+1 <<"° coefficiente di x: ";
         cin >> x[i];
         cout << "Inserisci il " << i+1 <<"° coefficiente di y: ";
